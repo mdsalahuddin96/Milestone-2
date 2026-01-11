@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 2</title> 
+    <style>
+        .container{
+            /* border: 2px solid green; */
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+            font-size: 2rem;
+            color: white;
+        }
+        .left{
+            background-color: darkmagenta;
+            height: 50vh;
+        }
+        .right{
+            /* background-color: brown; */
+            display: grid;
+            grid-template-rows: repeat(2,1fr);
+            gap: 10px;
+        }
+        .right-inner1{
+            background-color: yellow;
+        }
+        .right-inner2{
+            display: grid;
+            gap:10px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .right-inner2-left{
+            background-color: blue;
+        }
+        .right-inner2-right{
+            background-color: brown;
+        }
+        @media screen and (max-width:576px){
+            .container{
+                grid-template-columns: repeat(1,1fr);
+            }
+            .right-inner2{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    </style>  
+</head>
+<body>
+    <div class="container">
+        <div class="left">box-1</div>
+        <div class="right">
+            <div class="right-inner1">box-2</div>
+            <div class="right-inner2">
+                <div class="right-inner2-left">
+                    Box-3
+                </div>
+                <div class="right-inner2-right">
+                    Box-4
+                </div>
+            </div> 
+        </div>
+
+    </div>
+</body>
+</html>
+
+        <!-- <div class="box3">box-3</div>
+        <div class="box4">box-4</div> -->
