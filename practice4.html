@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 4</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            height: 50vh;
+            gap:20px;
+            grid-template-rows: repeat(2,1fr);
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .btn{
+            padding: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            background-color: rgb(73, 221, 172);
+            border: none;
+            border-radius: 6px;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="./burger.jpg" alt="burger">
+        </div>
+        <div class="right">
+            <h2>Spicy Burger</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe facilis omnis quae architecto iste molestiae porro, commodi dignissimos nihil tempore minus unde quis earum velit! Ad velit delectus alias deleniti.
+            Eius culpa, iusto debitis aliquid quam aspernatur voluptatibus vitae ea, animi numquam necessitatibus assumenda quia cumque deserunt facere ipsam! Necessitatibus sed quam labore voluptatibus repellat consequatur aspernatur doloribus deserunt sit!
+            Inventore labore amet ipsam architecto omnis quis vitae tempore. Nostrum, eum reiciendis impedit, adipisci dolore excepturi totam sequi deleniti officia labore, vel velit obcaecati repellendus at earum maxime. Laborum, repellat!
+            Quo rerum tempora, eveniet culpa aspernatur fugiat maiores earum veritatis blanditiis dicta rem quisquam quam labore tempore eius accusamus, cumque laborum quae debitis iste architecto aliquid nobis. Eius, adipisci at?
+            Error, recusandae ab neque voluptatum eveniet officiis odit inventore, itaque cumque ducimus aut distinctio ipsum nihil, beatae impedit pariatur ullam optio. Nostrum sint eaque architecto porro veritatis aut odit provident!</p>
+            <button class="btn">Order</button>
+        </div>
+
+        <div class="left">
+            <img src="./pizza.jpg" alt="burger">
+        </div>
+        <div class="right">
+            <h2>Spicy Pizza</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe facilis omnis quae architecto iste molestiae porro, commodi dignissimos nihil tempore minus unde quis earum velit! Ad velit delectus alias deleniti.
+            Eius culpa, iusto debitis aliquid quam aspernatur voluptatibus vitae ea, animi numquam necessitatibus assumenda quia cumque deserunt facere ipsam! Necessitatibus sed quam labore voluptatibus repellat consequatur aspernatur doloribus deserunt sit!
+            Inventore labore amet ipsam architecto omnis quis vitae tempore. Nostrum, eum reiciendis impedit, adipisci dolore excepturi totam sequi deleniti officia labore, vel velit obcaecati repellendus at earum maxime. Laborum, repellat!
+            Quo rerum tempora, eveniet culpa aspernatur fugiat maiores earum veritatis blanditiis dicta rem quisquam quam labore tempore eius accusamus, cumque laborum quae debitis iste architecto aliquid nobis. Eius, adipisci at?
+            Error, recusandae ab neque voluptatum eveniet officiis odit inventore, itaque cumque ducimus aut distinctio ipsum nihil, beatae impedit pariatur ullam optio. Nostrum sint eaque architecto porro veritatis aut odit provident!</p>
+            <button class="btn">Order</button>
+        </div>
+    </div>
+</body>
+</html>
